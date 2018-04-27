@@ -1,0 +1,61 @@
+@import '../../../styles.scss';
+
+.sort-filter{
+    padding: 5px 15px 5px 15px;
+    background: $dark-gray;
+    border-radius: 5px;
+    .row{
+        display: flex;
+        align-items: center;
+        @media (max-width: $break-point) {
+            display: block;
+            align-items: none;
+        }
+        .sort-group{
+            border-right: 1px $light-gray solid;
+            p{
+                color: gray;
+                margin-bottom: 0px;
+                padding-right: 5px;
+                @media (max-width: $break-point) {
+                    display: block;
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+            }
+            .dropdown.bootstrap-select{
+                .filter-option-inner-inner{
+                    color: gray;
+                }
+            }
+        }
+        .check-boxes-group{
+            @media (max-width: $break-point) {
+                padding: 20px 15px 20px 15px;
+                text-align: left;
+            }
+            p{
+                color: gray;
+                display: inline-block;
+                padding-right: 30px;
+                margin-bottom: 0px;
+                @media (max-width: $break-point) {
+                    display: block;
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+            }
+            .check-box{
+                display: inline-block;
+                padding: 0px 15px 0px 0px;
+                label{
+                    color: gray;
+                    font-size: 14px;
+                    font-weight: normal;
+                    padding-left: 5px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}

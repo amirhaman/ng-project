@@ -1,0 +1,57 @@
+@import '../../../styles.scss';
+
+.header{
+    padding: 20px 0px 20px 0px;
+    @media (max-width: $break-point) {
+        padding: 20px 15px 20px 15px;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        @media (max-width: $break-point) {
+            display: block;
+            align-items: none;
+        }
+        .diploma{
+            padding-top: 15px;
+            color: black;
+            font-weight: bolder;
+            font-size: 22px;
+            @media (max-width: 1200px) {
+                font-size: 17px;
+            }
+        }
+        .credit{
+            padding-top: 15px;
+            color: gray;
+            span{
+                width:30px;
+                height:30px;
+                border-radius: 30px;
+                color: white;
+                background-color: purple;
+                padding: 5px;
+            }
+        }
+        .progress-group{ 
+            padding-top: 15px;
+            .row{
+                @media (max-width: $break-point) {
+                    margin-left: 0px;
+                }
+                .progress{
+                    max-height: 15px;
+                    margin-bottom: 0px;
+                    padding: 0px;
+                    .progress-bar{
+                        background-color: green;
+                    }
+                }
+                .progress-count{
+                    color: green;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

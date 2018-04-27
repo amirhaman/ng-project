@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+$break-point: 990px;
+$dark-gray: #f0f0f0;
+$light-gray: #cdcdcd;
+$white: #fff;
+$blue: rgb(61, 109, 199);
+$dark-blue: rgb(30, 71, 148);
+
+h1{ font-size: 23px; }
+
+
+.container {
+    @media (min-width: 1200px){
+        width: 1280px;
+    }
+}
+
+.slot-add{
+    position: relative;
+    border: 1px $dark-gray solid;
+    border-radius: 5px;
+    margin:5px;
+    &::before {
+        content: '+';
+        position: absolute;
+        display: inline-block;
+        background: $blue;
+        color: white;
+        width: 40px;
+        height: 100%;
+        border-radius: 5px 0px 0px 5px;
+        font-size: 33px;
+        text-align: center;
+    }
+    .info-container{
+        p{
+            color: $blue;
+            margin: 5px 10px 5px 50px;
+            span{
+                color: $light-gray;
+            }
+        }
+    }
+}
+.slot-available{
+    position: relative;
+    border: 1px $dark-gray dashed;
+    border-radius: 5px;
+    margin:5px;
+    height: 55px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    @media (max-width: $break-point) {
+        display: block;
+        align-items: none;
+    }
+    .info-container{
+        p{
+            color: gray;
+            margin: 5px 10px 5px 20px;
+            span{
+                color: $light-gray;
+            }
+        }
+    }
+}
+.slot-course{
+    position: relative;
+    border: 1px $dark-gray solid;
+    border-radius: 5px;
+    margin:5px;
+    &::before {
+        content: ' ';
+        position: absolute;
+        display: inline-block;
+        background: forestgreen;
+        color: white;
+        width: 10px;
+        height: 100%;
+        border-radius: 5px 0px 0px 5px;
+    }
+    .info-container{
+        p{
+            color: gray;
+            margin: 5px 10px 5px 20px;
+            span{
+                color: $light-gray;
+            }
+        }
+    }
+}

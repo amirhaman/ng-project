@@ -1,0 +1,39 @@
+@import '../../../styles.scss';
+
+.sidebar{
+    border: 1px $dark-gray solid;
+    border-radius: 5px;
+    article{
+        .article-head{
+            background: $dark-gray;
+            h1{
+                padding: 0px 10px 0px 10px;
+            }
+            p{
+                color: gray;
+                padding: 0px 10px 0px 10px;
+            }
+        }
+        .article-body{
+            background: $white;
+        }
+        .article-footer{
+            background: $blue;
+            border-radius: 0px 0px 5px 5px;
+            .border{
+                padding: 2px;
+                border: solid 2px $dark-blue;
+                display: table;
+                margin: 20px auto 20px auto;
+                border-radius: 5px;
+                button{
+                    background-color: $dark-blue;
+                    padding: 15px;
+                    border-radius: 5px;
+                    font-size: 23px;
+                    display: table-cell;
+                }
+            }
+        }
+    }
+}
